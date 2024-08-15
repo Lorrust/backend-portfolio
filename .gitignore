@@ -1,10 +1,21 @@
-.idea/
-
-!.idea/.name
-!.idea/modules.xml
-!.idea/*.iml
-!.idea/runConfigurations/
-
-*.iws
-
+# Java build files
+/target/
 out/
+
+# IDE-specific files
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Build outputs
+*.class
+*.jar
+*.war
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
