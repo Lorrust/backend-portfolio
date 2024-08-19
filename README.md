@@ -1,3 +1,8 @@
 # Backend Portfolio
 
-Java backend application showcasing projects and exercises
+### Student: Lucas Silva
+### Teacher: Ramon Venson
+
+#
+
+Repository showcasing Java projects and exercises developed during back-end classes.
