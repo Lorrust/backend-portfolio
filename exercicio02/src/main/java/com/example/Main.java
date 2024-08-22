@@ -5,8 +5,28 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        Character mage = new Character("Mage", 250, 30);
+        List<Character> heroes = new ArrayList<>();
+        Character mage = new Character("Mage", 50, 30);
+        heroes.add(mage);
+        Character summoner = new Character("Summoner", 300, 20);
+        heroes.add(summoner);
+        Character paladin = new Character("Paladin", 300, 50);
+        heroes.add(paladin);
 
+        for (Character hero : heroes) {
+            List<Character> enemies = getEnemies();
+            for (Character enemy : enemies) {
+                System.out.println("\n" + hero.name + " vs. " + enemy.name);
+                while (hero.health > 0 && enemy.health > 0) {
+                    hero.attack(enemy);
+                    enemy.attack(hero);
+                }
+                hero.verifyAlive(enemy);
+            }
+        }
+    }
+
+    private static List<Character> getEnemies() {
         List<Character> enemies = new ArrayList<>();
         Character orc = new Character("Orc",100, 10);
         enemies.add(orc);
@@ -18,13 +38,6 @@ public class Main {
         enemies.add(knight);
         Character dragon = new Character("Dragon",500, 50);
         enemies.add(dragon);
-
-        while (mage.health > 0) {
-            for (Character enemy : enemies) {
-                while (enemy.health > 0) {
-                    mage.attack(enemy);
-                }
-            }
-        }
+        return enemies;
     }
 }

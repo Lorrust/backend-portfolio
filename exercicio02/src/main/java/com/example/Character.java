@@ -2,32 +2,49 @@ package com.example;
 
 public class Character {
     String name;
+    Integer strength;
     Integer health;
-    Integer attack;
+    Integer maxHealth;
 
-    public void verifyAlive() {
-        if (health > 0) {
-            System.out.println(this.name + " is alive.");
+    public void verifyAlive(Character enemy) {
+        if (this.health > 0 && enemy.health <= 0) {
+            System.out.println(this.name + " defeated " + enemy.name + "!");
         } else {
-            System.out.println(this.name + " is dead.");
+            System.out.println(this.name + " was defeated by " + enemy.name + "!");
         }
     }
 
     public void attack(Character target) {
-        target.takeDamage(this.attack);
-    }
-
-    public void takeDamage(Integer damage) {
-        if (this.health > 0) {
-            this.health -= damage;
-        } else {
-            System.out.println(this.name + " was defeated.");
+        if (this.health > 0 && target.health > 0) {
+            System.out.println(this.name + " attacks " + target.name + "!");
+            target.takeDamage(this.strength);
         }
     }
 
-    public Character(String name, Integer health, Integer attack) {
+    public void takeDamage(Integer damage) {
+        if (this.health <= 0) {
+            System.out.println(this.name + " was defeated!");
+        } else {
+            System.out.println(this.name + " takes " + damage + " damage!");
+            this.health -= damage;
+            System.out.println(this.name + "'s Health: " + health + "/" + this.maxHealth);
+        }
+    }
+
+    public Character(String name, Integer maxHealth, Integer strength) {
         this.name = name;
-        this.health = health;
-        this.attack = attack;
+        this.strength = strength;
+        this.health = maxHealth;
+        this.maxHealth = maxHealth;
+    }
+
+    @java.lang.Override
+    public java.lang.String toString() {
+        return "{Character: " +
+                name + '\'' +
+                ", Health = " + health +
+                ", Max Health = " + maxHealth +
+                ", Strength = " + strength +
+                '}';
     }
 }
