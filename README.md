@@ -5,4 +5,10 @@
 
 #
 
-Repository showcasing Java projects and exercises developed during back-end classes.
+Repository showcasing Java projects and exercises developed during university back-end classes.
+
+## Technologies
+
+<div>
+    <img src="https://skillicons.dev/icons?i=java,idea,git" />
+</div>
