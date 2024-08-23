@@ -1,4 +1,4 @@
-package com.example;
+package org.example;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,6 +19,6 @@ public class Harbor {
 
     public Harbor(String name) {
         this.name = name;
-        this.dockedBoats = new ArrayList<Boat>();
+        this.dockedBoats = new ArrayList<>();
     }
 }

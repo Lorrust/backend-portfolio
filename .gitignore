@@ -1,6 +1,7 @@
 # Java build files
 /target/
 out/
+/build/
 
 # IDE-specific files
 .idea/
@@ -8,10 +9,14 @@ out/
 *.iml
 *.ipr
 
+# Maven
+.mvn/
+
 # Build outputs
 *.class
 *.jar
 *.war
+*.ear
 
 # Logs
 *.log

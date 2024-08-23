@@ -1,4 +1,4 @@
-package com.example;
+package org.example;
 
 public class SmallHarbor extends Harbor {
 
@@ -16,3 +16,4 @@ public class SmallHarbor extends Harbor {
         }
     }
 }
+

@@ -1,4 +1,4 @@
-package com.example;
+package org.example;
 
 public class Character {
     String name;
@@ -36,15 +36,5 @@ public class Character {
         this.strength = strength;
         this.health = maxHealth;
         this.maxHealth = maxHealth;
-    }
-
-    @java.lang.Override
-    public java.lang.String toString() {
-        return "{Character: " +
-                name + '\'' +
-                ", Health = " + health +
-                ", Max Health = " + maxHealth +
-                ", Strength = " + strength +
-                '}';
     }
 }
