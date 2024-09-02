@@ -26,4 +26,12 @@ public class Playlist {
     public void setSongs(List<Song> songs) {
         this.songs = songs;
     }
+
+    public void addSong(Song song) {
+        if (this.songs.contains(song)) {
+            System.out.println("This song is already in the playlist.");
+        } else {
+        this.songs.add(song);
+        }
+    }
 }
