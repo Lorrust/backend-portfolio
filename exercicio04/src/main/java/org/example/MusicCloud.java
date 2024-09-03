@@ -17,4 +17,13 @@ public class MusicCloud {
     public void setAvailableSongs(List<Song> availableSongs) {
         this.availableSongs = availableSongs;
     }
+
+    public Song searchSong(String title) {
+        for (Song song : availableSongs) {
+            if (song.getTitle().toLowerCase().contains(title.toLowerCase())) {
+                return song;
+            }
+        }
+        throw new IllegalArgumentException();
+    }
 }
