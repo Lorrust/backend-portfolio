@@ -10,5 +10,5 @@ Repository showcasing Java projects and exercises developed during university ba
 ## Technologies
 
 <div>
-    <img src="https://skillicons.dev/icons?i=java,idea,git" alt="Java, IntelliJ IDEA and Git" />
+    <img src="https://skillicons.dev/icons?i=java,spring,idea,git" alt="Java, Spring, IntelliJ IDEA and Git" />
 </div>
