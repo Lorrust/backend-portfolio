@@ -1,4 +1,4 @@
-package org.example.exercicio07.controller;
+package org.example.exercicio07;
 
 import org.springframework.web.bind.annotation.*;
 
@@ -6,12 +6,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/movie")
 public class MovieController {
 
-    String[][] movies = {
-            {"Men in Black", "Arrival"},
-            {"Shrek", "Gladiator"}
-    };
-
-    @GetMapping({})
+    @GetMapping()
     public String recommendMovie(@RequestParam String ambience, @RequestParam String genre) {
         if (ambience.equals("sci-fi")) {
             if (genre.equals("comedy")) {
