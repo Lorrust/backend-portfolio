@@ -1,0 +1,3 @@
+Um ataque de supply chain é um tipo de ataque cibernético tipicamente utilizado em sistemas terciários, ao invés de focar diretamente no sistema principal. A SolarWinds, uma empresa americana de software para gestão de redes e sistemas, sofreu esse tipo de ataque através de uma de suas ferramentas de terceiros, que foi acessada de forma ilegal e utilizada para injetar código malicioso na própria SolarWinds.
+
+https://www.crowdstrike.com/cybersecurity-101/cyberattacks/most-common-types-of-cyberattacks/
